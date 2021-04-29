@@ -25,13 +25,13 @@
 }
 .flip-card .inner .front {
   background-color: var(--main4);
-  border-radius: 17px;
+  border-radius: 18px;
 }
 .flip-card .inner .back {
   background-color: var(--main4);
   color: var(--black);
   transform: rotateY(180deg);
-  border-radius: 17px;
+  border-radius: 18px;
 }
 .flip-card:hover .inner {
   transform: rotateY(180deg);
