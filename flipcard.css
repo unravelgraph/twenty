@@ -1,6 +1,6 @@
 .flip-card {
   background-color: transparent;
-  width: 300px;
+  width: 163px;
   height: 300px;
   perspective: 1000px;
 }
@@ -24,7 +24,7 @@
   flex-direction: column;
 }
 .flip-card .inner .front {
-  background-color: #bbb;
+  background-color: var(--main4);
 }
 .flip-card .inner .back {
   background-color: var(--main4);
