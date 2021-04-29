@@ -3,7 +3,6 @@
   width: 163px;
   height: 300px;
   perspective: 1000px;
-  border-radius: 25px;
 }
 .flip-card .inner {
   position: relative;
@@ -26,11 +25,13 @@
 }
 .flip-card .inner .front {
   background-color: var(--main4);
+  border-radius: 25px;
 }
 .flip-card .inner .back {
   background-color: var(--main4);
   color: var(--black);
   transform: rotateY(180deg);
+  border-radius: 25px;
 }
 .flip-card:hover .inner {
   transform: rotateY(180deg);
