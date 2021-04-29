@@ -3,6 +3,7 @@
   width: 163px;
   height: 300px;
   perspective: 1000px;
+  border-radius: 25px;
 }
 .flip-card .inner {
   position: relative;
