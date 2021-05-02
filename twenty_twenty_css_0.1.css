@@ -382,6 +382,11 @@ font: 8px work sans !important; font-weight:500;letter-spacing: 0.2px !important
 .welcSIT {left:0;top:0;margin-top:-3px;display:block;text-align:center;letter-spacing:-0.2px;
 position:relative; font-size:12px;text-transform:lowercase!important;}
 
+/-------INSIDER DEGRÉ-------/
+.soft {background:#a9db90;} .middle {background:#d7b77a;} .trash {background:#db6868;}
+.soft, .middle, .trash {color:#fff;font-size:8px;font-weight:800;padding:0px 10px;}
+
+
 /*-------MUSIC PLAYER-------*/
 #glenplayer02 { text-align:center;position:;top:px;bottom:0; margin-bottom:0px; left:0;margin-left:5px; display:flex; z-index:99;}
 #glenplayer02 a {text-decoration:none;}
