@@ -18,7 +18,6 @@ body {
   --update-categories-prefix : '#';
   --popup-padding            : 2em;
   --popup-width              : 700px;
-
 }
 
 div#updates,
@@ -75,12 +74,12 @@ div#updates .update {
   position                    : absolute;
   width                       : var(--update-width);
   padding                     : var(--update-padding);
-  color                       : var(--update-text-color);
-  border                      : 1px solid var(--update-border);
+  color                       : var(--txt);
+  border                      : 1px solid var(--bordersm);
   border-radius               : var(--update-border-radius);
-  background                  : var(--update-background);
-  -webkit-box-shadow          : 0 0 1em var(--update-border);
-  box-shadow                  : 0 0 1em var(--update-border);
+  background                  : var(--lighter2);
+  -webkit-box-shadow          : 0 0 1em var(--bordersm);
+  box-shadow                  : 0 0 1em var(--bordersm);
   -o-transition-property      : opacity,
                                 transform;
   -webkit-transition-property : opacity,
@@ -101,14 +100,14 @@ div#updates .update>div:last-child {
 }
 
 div#updates .update_date {
-  color       : var(--update-accent);
+  color       : var(--main);
   font-size   : 0.9em;
   line-height : 1em;
 }
 
 div#updates .update_title {
   margin      : 0.25em 0;
-  color       : var(--update-title);
+  color       : var(--black);
   font-size   : 1.2em;
   font-weight : bold;
   line-height : var(--update-line-height);
@@ -121,7 +120,7 @@ div#updates .update_categories {
 }
 
 div#updates .update_categories span {
-  color      : var(--update-accent);
+  color      : var(--main);
   font-style : italic;
 }
 
@@ -161,7 +160,7 @@ div#updates .update.active_update {
 div#updates div#show_all_updates {
   margin-bottom : 0.65em;
   padding-left  : calc(var(--update-padding) / 2);
-  color         : var(--update-accent);
+  color         : var(--main);
   font-style    : italic;
   cursor        : help;
 }
@@ -201,7 +200,7 @@ div#updates_popup::before {
   bottom     : 0;
   left       : 0;
   opacity    : 0.5;
-  background : var(--popup-overlay);
+  background : var(--lighter2);
 }
 
 div#updates_popup_wrap {
@@ -211,7 +210,7 @@ div#updates_popup_wrap {
   max-height : 75%;
   margin     : auto;
   padding    : var(--popup-padding);
-  color      : var(--popup-text-color);
+  color      : var(--txt);
   background : var(--popup-background);
 }
 
@@ -229,11 +228,11 @@ div#updates_popup_updates::-webkit-scrollbar {
 }
 
 div#updates_popup_updates::-webkit-scrollbar-thumb {
-  background : var(--popup-accent);
+  background : var(--main);
 }
 
 div#updates_popup_updates::-webkit-scrollbar-track {
-  background : var(--popup-accent-35);
+  background : var(--rbgm2);
 }
 
 div#updates p:last-child {
@@ -282,15 +281,15 @@ div#updates_popup .update>div:last-child {
 }
 
 div#updates_popup a {
-  color : var(--popup-accent);
+  color : var(--main);
 }
 
 div#updates_popup a:hover {
-  color : var(--popup-text-color);
+  color : var(--txt);
 }
 
 div#updates_popup .update_date {
-  color       : var(--popup-accent);
+  color       : var(--main);
   font-size   : 0.9em;
   font-weight : bold;
   line-height : 1em;
@@ -298,7 +297,7 @@ div#updates_popup .update_date {
 
 div#updates_popup .update_title {
   margin      : 0.5em 0;
-  color       : var(--update-title);
+  color       : var(--black);
   font-size   : 1.2em;
   font-weight : bold;
   line-height : var(--update-line-height);
@@ -311,7 +310,7 @@ div#updates_popup .update_categories {
 }
 
 div#updates_popup .update_categories span {
-  color      : var(--popup-accent);
+  color      : var(--main);
   font-style : italic;
 }
 
@@ -346,7 +345,7 @@ div#updates_popup_close svg {
   --size : calc(0.75 * var(--popup-padding));
   width  : var(--size);
   height : var(--size);
-  stroke : var(--popup-accent);
+  stroke : var(--main);
 }
 
 div#updates[bottom] {
