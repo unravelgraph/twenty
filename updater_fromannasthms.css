@@ -8,11 +8,6 @@
  ******************************************************************************/
 
 body {
-  --update-accent            : #b59899;
-  --update-text-color        : #444;
-  --update-title             : #000;
-  --update-background        : #fff;
-  --update-border            : #f2f3f2;
   --update-font-size         : 14px;
   --update-width             : 250px;
   --update-padding           : 1em;
