@@ -1,0 +1,85 @@
+/*------------------à mettre dans OVERALL_HEADER-------------------*/
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="//pull.cappuccicons.com/cpf.js"></script>
+
+</head>
+<body class="day" background="{T_BODY_BACKGROUND}" bgcolor="{T_BODY_BGCOLOR}" text="{T_BODY_TEXT}" link="{T_BODY_LINK}"
+	  vlink="{T_BODY_VLINK}">
+            
+<script>
+          function toggleTheme() {
+                document.body.classList.toggle("day");
+                document.body.classList.toggle("night");
+                localStorage.setItem(
+                  "colorTheme",
+                  document.body.classList.contains("night") ? "night" : "day"
+                );
+          }
+          
+          if (localStorage.getItem("colorTheme") === "night") {
+          	toggleTheme();
+          } else if (localStorage.getItem("colorTheme") !== "day" &&window.matchMedia &&window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          	toggleTheme();
+          }
+        </script>
+        
+
+<div onclick="toggleTheme()" class="daynight"><i class="cp cp-moon"></i> / <i class="cp cp-sun"></i></div>  
+
+
+/*------------------CSS-------------------*/
+
+:root {
+  --dark1: #000;
+  --light1: #fff;
+  
+  
+}
+
+body.dark {
+  --dark1: #fff;
+  --light1: #000;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+  --dark1: #fff;
+  --light1: #000;
+}
+
+body.dark {
+  --dark1: #000;
+  --light1: #fff;
+}
+}
+
+:root {
+    /* couleurs qui ne changent pas */
+        --test: #fff;
+  	--gradientc1: rgba(131,58,180,1);
+  	--gradientc2: rgba(253,29,29,1);
+  
+   /* mode jour */
+        --dark1: #000;
+  	--light1: #fff;
+} 
+    
+body.night { /* mode nuit */
+        --dark1: #fff;
+  	--light1: #000;
+}
+@media (prefers-color-scheme: dark) {
+    body { /* cc mode nuit */
+        --dark1: #fff;
+  	--light1: #000;
+  }
+  
+  body.night { /* cc mode jour */
+ --fond-pale: #e6e6e6;
+        --dark1: #000;
+  	--light1: #fff;
+  }
+}
+
+body {background: var(--dark1); color: var(--light1); transition:.3s;}
