@@ -1,0 +1,389 @@
+/******************************************************************************
+ * scrolling updates by annasthms                                             *
+ * created: may 6, 2020                                                       *
+ * do not use outside its intended use without my permission                  *
+ *  - intended use with the scrolling updates "tab" released by me            *
+ *                                                                            *
+ * all svg icons from feathericons: https: //feathericons.com/                *
+ ******************************************************************************/
+
+body {
+  --update-accent            : #b59899;
+  --update-text-color        : #444;
+  --update-title             : #000;
+  --update-background        : #fff;
+  --update-border            : #f2f3f2;
+  --update-font-size         : 14px;
+  --update-width             : 250px;
+  --update-padding           : 1em;
+  --update-border-radius     : 1em;
+  --update-line-height       : 1.35em;
+  --update-transition-time   : 0.75s;
+  --update-loop-duration     : 2.5s;
+  --update-categories-prefix : '#';
+  --popup-padding            : 2em;
+  --popup-width              : 700px;
+
+}
+
+div#updates,
+div#updates * {
+  position : relative;
+}
+
+div#updates {
+  position           : fixed;
+  top                : 2em;
+  left               : 2em;
+  width              : calc(var(--update-width) + 2 * var(--update-padding));
+  font-size          : var(--update-font-size);
+  line-height        : var(--update-line-height);
+  -o-transition      : height var(--update-transition-time);
+  -webkit-transition : height var(--update-transition-time);
+  transition         : height var(--update-transition-time);
+}
+
+div#updates p {
+  margin : 0.5em 0;
+}
+
+div#updates p:first-child {
+  margin-top : 0;
+}
+
+div#updates p:last-child {
+  margin-bottom : 0;
+}
+
+div#updates img {
+  display   : block;
+  max-width : 100%;
+  height    : auto;
+  margin    : 0 auto;
+}
+
+div#updates img:not(:first-child):not(:last-child) {
+  margin : 1em auto;
+}
+
+div#updates blockquote {
+  margin      : 0;
+  padding     : 0 0 0 3%;
+  border-left : 1px solid;
+}
+
+div#updates blockquote:not(:first-child):not(:last-child) {
+  margin : 1em 0;
+}
+
+div#updates .update {
+  position                    : absolute;
+  width                       : var(--update-width);
+  padding                     : var(--update-padding);
+  color                       : var(--update-text-color);
+  border                      : 1px solid var(--update-border);
+  border-radius               : var(--update-border-radius);
+  background                  : var(--update-background);
+  -webkit-box-shadow          : 0 0 1em var(--update-border);
+  box-shadow                  : 0 0 1em var(--update-border);
+  -o-transition-property      : opacity,
+                                transform;
+  -webkit-transition-property : opacity,
+                                transform;
+  transition-property         : opacity,
+                                transform;
+  -o-transition-duration      : var(--update-transition-time);
+  -webkit-transition-duration : var(--update-transition-time);
+  transition-duration         : var(--update-transition-time);
+}
+
+div#updates .update>div:first-child {
+  margin-top : 0 !important;
+}
+
+div#updates .update>div:last-child {
+  margin-bottom : 0 !important;
+}
+
+div#updates .update_date {
+  color       : var(--update-accent);
+  font-size   : 0.9em;
+  line-height : 1em;
+}
+
+div#updates .update_title {
+  margin      : 0.25em 0;
+  color       : var(--update-title);
+  font-size   : 1.2em;
+  font-weight : bold;
+  line-height : var(--update-line-height);
+}
+
+div#updates .update_categories {
+  margin      : 0.35em 0;
+  font-size   : 0.8em;
+  line-height : 1.15em;
+}
+
+div#updates .update_categories span {
+  color      : var(--update-accent);
+  font-style : italic;
+}
+
+div#updates .update_categories span:not(:last-child) {
+  margin-right : 0.25em;
+}
+
+div#updates .update_categories span::before {
+  content : var(--update-categories-prefix);
+}
+
+div#updates .update_description {
+  margin : 0.5em 0;
+}
+
+div#updates .update:not(.active_update) {
+  z-index           : -1;
+  opacity           : 0;
+  -ms-transform     : scale(0.9);
+  -webkit-transform : scale(0.9);
+  transform         : scale(0.9);
+  pointer-events    : none;
+}
+
+div#updates .update.prev_update {
+  --update-transition-time : 0.5s;
+  z-index                  : 2;
+  -ms-transform            : translateY(-10%) scale(1.0);
+  -webkit-transform        : translateY(-10%) scale(1.0);
+  transform                : translateY(-10%) scale(1.0);
+}
+
+div#updates .update.active_update {
+  position : relative;
+}
+
+div#updates div#show_all_updates {
+  margin-bottom : 0.65em;
+  padding-left  : calc(var(--update-padding) / 2);
+  color         : var(--update-accent);
+  font-style    : italic;
+  cursor        : help;
+}
+
+div#annasthms_credit {
+  float : right;
+}
+
+div#annasthms_credit svg {
+  width  : 1em;
+  height : 1em;
+}
+
+div#updates_popup,
+div#updates_popup * {
+  position : relative;
+}
+
+div#updates_popup {
+  z-index     : 3;
+  display     : flex;
+  position    : fixed;
+  top         : 0;
+  right       : 0;
+  bottom      : 0;
+  left        : 0;
+  align-items : center;
+}
+
+div#updates_popup::before {
+  z-index    : -1;
+  content    : '';
+  display    : block;
+  position   : absolute;
+  top        : 0;
+  right      : 0;
+  bottom     : 0;
+  left       : 0;
+  opacity    : 0.5;
+  background : var(--popup-overlay);
+}
+
+div#updates_popup_wrap {
+  box-sizing : border-box;
+  width      : var(--popup-width);
+  max-width  : 80%;
+  max-height : 75%;
+  margin     : auto;
+  padding    : var(--popup-padding);
+  color      : var(--popup-text-color);
+  background : var(--popup-background);
+}
+
+div#updates_popup_updates {
+  width         : 100%;
+  height        : 100%;
+  max-height    : calc(75vh - 2*var(--popup-padding));
+  padding-right : calc(2 * var(--popup-padding));
+  overflow      : auto;
+}
+
+div#updates_popup_updates::-webkit-scrollbar {
+  width   : 3px;
+  padding : 1px;
+}
+
+div#updates_popup_updates::-webkit-scrollbar-thumb {
+  background : var(--popup-accent);
+}
+
+div#updates_popup_updates::-webkit-scrollbar-track {
+  background : var(--popup-accent-35);
+}
+
+div#updates p:last-child {
+  margin-bottom: 0;
+}
+
+div#updates_popup img {
+  display  : block;
+  max-width: 100%;
+  height   : auto;
+  margin   : 0 auto;
+}
+
+div#updates_popup img:not(:first-child):not(:last-child) {
+  margin: 1em auto;
+}
+
+div#updates_popup blockquote {
+  margin     : 0;
+  padding    : 0 0 0 3%;
+  border-left: 1px solid;
+}
+
+div#updates_popup blockquote:not(:first-child):not(:last-child) {
+  margin: 1em 0;
+}
+
+div#updates_popup .update {
+  margin : var(--popup-padding) 0;
+}
+
+div#updates_popup .update:first-child {
+  margin-top : 0;
+}
+
+div#updates_popup .update:last-child {
+  margin-bottom : 0;
+}
+
+div#updates_popup .update>div:first-child {
+  margin-top : 0 !important;
+}
+
+div#updates_popup .update>div:last-child {
+  margin-bottom : 0 !important;
+}
+
+div#updates_popup a {
+  color : var(--popup-accent);
+}
+
+div#updates_popup a:hover {
+  color : var(--popup-text-color);
+}
+
+div#updates_popup .update_date {
+  color       : var(--popup-accent);
+  font-size   : 0.9em;
+  font-weight : bold;
+  line-height : 1em;
+}
+
+div#updates_popup .update_title {
+  margin      : 0.5em 0;
+  color       : var(--update-title);
+  font-size   : 1.2em;
+  font-weight : bold;
+  line-height : var(--update-line-height);
+}
+
+div#updates_popup .update_categories {
+  margin      : 0.35em 0;
+  font-size   : 0.8em;
+  line-height : 1.15em;
+}
+
+div#updates_popup .update_categories span {
+  color      : var(--popup-accent);
+  font-style : italic;
+}
+
+div#updates_popup .update_categories span:not(:last-child) {
+  margin-right : 0.25em;
+}
+
+div#updates_popup .update_categories span::before {
+  content : '#';
+}
+
+div#updates_popup .update_description {
+  margin : 1em 0;
+}
+
+div#updates_popup .update_description :first-child {
+  margin-top : 0;
+}
+
+div#updates_popup .update_description :last-child {
+  margin-bottom : 0;
+}
+
+div#updates_popup_close {
+  position : absolute;
+  top      : 0;
+  right    : calc(-1.25 * var(--popup-padding) - 2px);
+  cursor   : help;
+}
+
+div#updates_popup_close svg {
+  --size : calc(0.75 * var(--popup-padding));
+  width  : var(--size);
+  height : var(--size);
+  stroke : var(--popup-accent);
+}
+
+div#updates[bottom] {
+  top    : auto;
+  bottom : 2em;
+}
+
+div#updates[bottom] div#updates_container {
+  bottom : 2.75em;
+}
+
+div#updates[bottom] .update {
+  position : absolute;
+  bottom   : 0;
+}
+
+div#updates[right] {
+  right : 2em;
+  left  : auto;
+}
+
+div#updates[bottom] div#show_all_updates {
+  margin-top    : 0.65em;
+  margin-bottom : 0;
+  padding-right : calc(var(--update-padding) / 2);
+  padding-left  : 0;
+}
+
+div#updates[right] div#show_all_updates {
+  text-align : right;
+}
+
+div#updates[right] div#annasthms_credit {
+  float : left;
+}
