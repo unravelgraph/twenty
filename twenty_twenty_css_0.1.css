@@ -304,11 +304,6 @@ display:inline-block; margin-top:17px; padding:5px;width:380px;height:260px;back
 lnrgh {font-size:28px;}
 .tgl {width:70px;}
 
-#FAM, .FAM-tab.FAM-tab-active {  background: var(--white)!important;border:1px solid var(--borders)!important;color:var(--txt)!important;}
-#FAM-tab-container {border-bottom:1px solid var(--borders)!important;}
-#FAM-tab-add {border-left: 1px solid var(--borders)!important;}
-body.chatbox, #chatbox_header { background-color:var(--white)!important;}
-
 .cadrecou2 {width: 30px;height: 30px;border-radius:100%;padding:7px;margin-top:25px;margin-left:10px;margin-right:10px;}
 .snip1103 img, .snip1102 img, .snip1101 img { width:30px;height:30px;object-fit: cover; position: relative; opacity: 0.2;
  -webkit-filter: grayscale(100%); filter: grayscale(100%);border-radius:100%;}
@@ -437,3 +432,10 @@ div#updates_popup::before {background:var(--rgb5)!important;}
 .htp1, .htp2 {transition: all .8s!important;}
 .htp1 {color:var(--white);} .htp2 {color:var(--main);font-weight:800;font-size:85px;}
 .htp1:hover {color:var(--main3);} .htp2:hover {color:var(--main2);} 
+
+
+#FAM, .FAM-tab.FAM-tab-active {  background: var(--white)!important;border:1px solid var(--borders)!important;color:var(--txt)!important;}
+#FAM-toolbar{color:var(--white)!important;border-bottom: 1px solid var(--borders)!important;}
+#FAM-tab-container {border-bottom:1px solid var(--borders)!important;}
+#FAM-tab-add {border-left: 1px solid var(--borders)!important;}
+body.chatbox, #chatbox_header { background-color:var(--white)!important;}
