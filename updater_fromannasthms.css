@@ -211,7 +211,7 @@ div#updates_popup_wrap {
   margin     : auto;
   padding    : var(--popup-padding);
   color      : var(--txt);
-  background : var(--popup-background);
+  background : var(--lighter2);
 }
 
 div#updates_popup_updates {
