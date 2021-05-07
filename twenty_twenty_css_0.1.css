@@ -413,3 +413,22 @@ sl {font-size: 9px; font-weight: 700; margin-top: 2px; letter-spacing: 0px; font
 #quickloginform button { border:0 none;   cursor:pointer;  font-size:11px;outline:0 none;padding:15px; text-transform:uppercase;  width:100%;}
 #quickloginform p:nth-child(n) {  margin-bottom:0;  margin-top:20px;  text-align:center;}
 #quickloginform form p {font-size:11px;}#quickloginform form a {text-decoration: none;}
+
+/*updates header*/
+div#updates {position:relative!important;margin-bottom:-70px;top:-190px!important;left:185px!important;}
+div#annasthms_credit a {font-size:0px;opacity:0;}
+div#updates, div#updates .update  {width:210px!important;height:80px; }
+div#updates .update {background:var(--rgb2)!important;border:none!important; -webkit-box-shadow:none!important;box-shadow:none!important;
+text-align:justify;font-size:11px;line-height:120%;font-family:arial;border-left:1px solid var(--rgbm)!important;border-radius:0px!important;}
+div#updates div#show_all_updates {font-family:playfair display;text-transform:uppercase;font-size:8px;letter-spacing:2px;
+  font-style:normal!important;position:relative;left:14px;font-weight:600;color:var(--main)!important;}
+.update_title {font-family: playfair display!important;font-style: italic; font-weight: 700;} 
+.update_date {font-family:montserrat;color:var(--main)!important;font-weight:600;}
+div#updates_popup_close svg {  stroke: var(--main)!important;}
+div#updates_popup_wrap {font-family:montserrat;font-size:11px;line-height:110%;font-weight:500;}
+div#updates_popup::before {background:var(--rgb5)!important;}
+.ht4 {font-family:work sans!important;}
+.htp1, .htp2 {transition: all .8s!important;}
+.htp1 {color:var(--white);} .htp2 {color:var(--main);font-weight:800;font-size:85px;}
+.htp1:hover {color:var(--main3);} .htp2:hover {color:var(--main2);} 
+
