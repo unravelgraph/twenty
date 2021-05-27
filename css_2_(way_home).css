@@ -155,7 +155,6 @@ text-align:center;width:250px;padding:2px;}
 margin-bottom:5px;font-size:12px;}
 
 /*profil*/
-/*profil*/
 .ppersonnage {margin-left:12px;margin-top:15px;margin-bottom:25px;text-align:center;
   height:auto;width:205px;padding: 5px; outline-offset: 3px;}
 .ppseudo {margin-bottom:3px;text-transform:uppercase;letter-spacing:-0.1px;}
@@ -239,48 +238,7 @@ button.rep-button.fa_like:before {content:'\ea55';} button.rep-button.fa_liked:b
 .lmava:hover img { -webkit-transform: scale(1.1);  transform: scale(1.1);}
 .psp strong{font-weight:800!important;}
 
-/*affichage profil*/
-.icop:nth-child(2) {width:50px;height:50px;border-radius:100%;border:1px solid var(--white);padding:5px;}
-.icop:nth-child(2) img{width:50px;height:50px;border-radius:100%;object-fit: cover;}
-.icop:nth-child(1){display:none;}
-.icop:nth-child(n+3){display:none;}
 
-.insto {border-bottom:1px solid var(--white);width:292px;margin-top:1px;font-size:7px;text-transform:uppercase;
-  letter-spacing:0.5px;font-weight:800!important;padding:3px 5px;text-align:center;}
-.insi:nth-child(-n+8){display:none;}
-.insi:nth-child(n+10){display:none;}
-
-.avPFIL .M15_AvatarProf {width:290px;height:51px;outline:1px solid var(--white);outline-offset: 3px;overflow:hidden;
-  padding: 5px 10px;background-clip: padding-box;background:var(--rgb1);border:1px solid var(--main);position:relative;right:3px;}
-.ploufi:nth-child(-n+4){display:none;}
-.ploufi:nth-child(n+9){display:none;}
-.ploufo {padding:1px 0px;}
-.ploufo .field_uneditable, .inst .field_uneditable {display:inline-block;}
-
-.avPFIL .M14_AvatarProf img {  object-fit: cover;height:216px;width: 180px;border:1px solid var(--main);outline-offset: 3px;
-  padding: 3px;background-clip: padding-box;outline:3px double var(--white);}
-.sbjPFIL {display:inline-block; vertical-align:top;padding:2px;width:188px; height:auto;background:var(--main);}
-.imgcontact2 { display: inline-block; font-size: 0; opacity: .8; margin:0px;  padding:0px 5px; vertical-align: middle; }
-#imgcontact2 {text-align:center;margin-left:30px;width:320px; padding:3px; margin-top:2px;}
-
-.poli {width:60px;height:59px;padding:5px;object-fit: cover;border:1px solid var(--white);margin-bottom:9px;}
-.imgpol img{width:60px;height:59px;object-fit: cover;position: relative; opacity: 0.2;
-  -webkit-filter: grayscale(100%); filter: grayscale(100%);}
-.imgpol {background: var(--main);width: 60px;height:59px; position:relative;top:0;left:0;z-index:1;}
-.imgpol * {-webkit-box-sizing: border-box; box-sizing: border-box;}
-
-.abtPFIL {outline-offset: 1px;outline:1px solid var(--white);
-display:inline-block; margin-top:17px; padding:5px;width:380px;height:260px;background:var(--main); }
-.frt {background:var(--lighter);width:380px;height:260px;overflow:auto;outline:1px solid var(--white)}
-.frti, .plouf {font-size:10px;line-height:112%;text-align:justify;}
-.frti {padding:8px 10px;}
-.ree {text-transform:uppercase;font-size:7px;font-weight:800;}
-.frt img {max-width:200px;}
-.frtp {padding:1px 0px;}
-.frtp .ree {position:relative;float:left;padding-right:2px;}
-.frtp .field_uneditable {display:inline-block;}
-.frtp:nth-child(-n+2){display:none;}
-.frtp:nth-child(14), .frtp:nth-child(5), .frtp:nth-child(6), .frtp:nth-child(7), .frtp:nth-child(8), .frtp:nth-child(9){display:none;}
 
 #badges-profil {height:350px;overflow:auto; margin: 0px 2px 25px;   text-align: center;}
 #badges-profil:before { content: "awards";display: block; outline-offset: 3px;
