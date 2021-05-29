@@ -86,6 +86,45 @@ div.md figcaption:hover {background-color:transparent;}
 
 
 /*catÃ©gories*/
+#ctd {margin-top:5px;margin-bottom:8px;height:36px;z-index:2;margin-left:1px;margin-right:1px;}
+.hautcate {text-align:center;width:752px;height:30px;position:relative;top:3px;position:relative;z-index:1;background:var(--rgbm);}
+.hautcate h2{width:200px;text-align:center;position:relative;top:9.5px;text-transform:uppercase;font-weight:800;padding:0px 15px 0px 15px;}
+.hautcate h2{letter-spacing:1.5px;font-size:8px;}
+.fondcate {background:var(--lighter2);outline-left:1px solid var(--lighter);outline-bottom:1px solid var(--lighter);font-size:11px;width:755px;position:relative;top:0px;}
+.catenew {width: 47px; height: 55px;padding:7px;border:1px solid var(--greyer);margin-left:5px;margin-top:10px;top:3px;position:relative;margin-right:3px;}
+.catenew img{width: 47px; height: 55px;object-fit: cover;}
+.titrecate {position:relative;left:4px;top:2px;padding-top:4px;font-weight: 700; text-transform: uppercase; letter-spacing: 3px;}
+.titrecate a{font-size: 13px!important;}
+.descricate {width:320px;height:55px;top:5px;position:relative;text-align:justify;line-height:112%;padding:8px;overflow:auto;}
+.imgcate {position:relative;padding:7px;width:55px;height:55px;margin-top:9px;margin-left:6px;}
+.snip1559 * { -webkit-box-sizing: border-box; box-sizing: border-box;  -webkit-transition: all 0.95s ease;transition: all 0.95s ease;}
+.snip1559:after {  opacity: 0.7; top: 0;  bottom: 0;  content: ''; left: -165%;  position: absolute;
+  width: 80px;  box-shadow: 0 0 100px white; -webkit-transform: skew(-20deg);  transform: skew(-20deg);  -webkit-transition: all 0.9s ease; transition: all 0.9s ease;}
+.snip1559 img {   vertical-align: top; backface-visibility: hidden; width:100%; height: 55px;object-fit: cover; opacity:0.4;-webkit-filter: grayscale(100%);filter: grayscale(100%);}
+.snip1559 cuicui { position: absolute; top: 0; bottom: 0; left: 0; right: 0; z-index: 1;  line-height: 1em;  opacity: 0;}
+.snip1559:hover > img { opacity: 0.9;-webkit-filter: grayscale(0%);filter: grayscale(0%);}
+.snip1559:hover:after { left: 200%;}
+.snip1559:hover cuicui {  opacity: 1;}
+.snip1559 { display: inline-block;left:0px;background:var(--gradient);margin-top:0px;margin-left:0px;
+ max-width: 55px;  min-width: 55px;overflow: hidden; position: relative; width: 100%;position:relative;}
+.blastmess {line-height:100%;}
+.lastmess {display: inline-block;text-align:right;letter-spacing:1px;font-weight:600;text-transform:uppercase;font-size:7px;
+width:150px;position:relative;left:-43px;}
+.lastmess a span strong, .lastmess strong, .lastmess .gensmall {text-transform:lowercase;font-size:9px;font-style:italic;}
+.lastmess a span strong, .lastmess strong, .lastmess .gensmall {position:relative;left:0px;  display: block;}
+a.last-post-icon { display: inline-block;position:relative;left:0px;}
+.pop br:nth-child(3) {display: none;} .gen2 {position:relative;top:1.5px;}
+.avacate {border-radius:100%;width:30px;height:30px;padding:6px;position:relative;top:px;left:-43px;}
+.avacate2 img{border-radius:100%;width:30px;height:30px;object-fit: cover; }
+.stg strong{font-size:9px!important;}
+.catemess b{font-weight:800;}
+.catemess {font-size: 7px;letter-spacing: 2px; font-weight: 600;top:-10px;position:relative;
+text-align: center;text-transform: uppercase;padding:1px 4px;width:150px;margin-left:3px;}
+div.catesfo {font-size:7px!important;letter-spacing:1px;text-transform:uppercase;
+margin-left:8px;margin-right:12px;margin-top:-9px;padding:8px 5px;}
+div.catesfo a{font-weight:600;}
+.symbsfo {font-size:8.5px;padding:5px;position:relative;top:1px;}
+.spp {font-size:7px!important;} .spp a{font-size:7px!important;}
 
 
 /*qeel*/
