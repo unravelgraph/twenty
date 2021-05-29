@@ -108,7 +108,7 @@ div.md figcaption:hover {background-color:transparent;}
 .snip1559 { display: inline-block;left:0px;background:var(--gradient);margin-top:0px;margin-left:0px;
  max-width: 55px;  min-width: 55px;overflow: hidden; position: relative; width: 100%;position:relative;}
 .blastmess {width:189px;height:20px;line-height:90%;}
-.lastmess {display: inline-block;text-align:right;letter-spacing:1px;font-weight:600;text-transform:uppercase;font-size:7px;}
+.lastmess {display: inline-block;text-align:left;letter-spacing:1px;font-weight:600;text-transform:uppercase;font-size:7px;}
 .lastmess a span strong, .lastmess strong, .lastmess .gensmall {text-transform:lowercase;font-size:9px;font-style:italic;}
 .lastmess a span strong, .lastmess strong, .lastmess .gensmall {position:relative;left:3px;}
 a.last-post-icon {position:relative;left:6px;}
