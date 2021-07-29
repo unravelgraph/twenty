@@ -328,7 +328,8 @@ left: 0; bottom: 0;  right: 0;top:-30px!important;position:relative;}
 position:fixed;cursor: pointer;  z-index: 999;   transition-property: right;   transition-duration: 500ms;width:30px;height:30px;}
 
 .bodylinewidth { margin-top: 72px;}
-.navbar_arte{ width: 100%;height: 53px;position: fixed; top: 0; left: 0; -webkit-box-sizing: border-box; box-sizing: border-box;padding: 5px 15px 0 5px; z-index: 98;}
+.navbar_arte{ width: 100%;height: 56px;position: fixed; top: 0; left: 0; -webkit-box-sizing: border-box; box-sizing: border-box;padding: 5px 15px 0 5px; z-index: 98;
+border-top:3px solid var(--rgbm2);}
 
 .avatar_navbar {width: 25px;height: 25px;-webkit-box-sizing: border-box;box-sizing: border-box;
   display: inline-block;float: left;margin-left:15px;}
@@ -419,6 +420,24 @@ sl {font-size: 9px; font-weight: 700; margin-top: 2px; letter-spacing: 0px; font
 #quickloginform form p {font-size:11px;}#quickloginform form a {text-decoration: none;}
 
 /*updates header*/
+div#updates {position:relative!important;margin-bottom:0px;top:10px!important;left:-10px!important; color: var(--txt);}
+div#annasthms_credit a {font-size:0px;opacity:0;}
+div#updates, div#updates .update  {width:500px!important;height:50px; }
+div#updates .update {background:transparent!important;border:none!important; -webkit-box-shadow:none!important;box-shadow:none!important;
+text-align:center;font-size:10px;line-height:110%;font-family:arial;border-radius:0px!important;color:var(--white)!important;}
+div#updates div#show_all_updates {font-family:work sans;text-transform:uppercase;font-size:8px;letter-spacing:2px;
+  font-style:normal!important;position:relative;left:10px;font-weight:600;color:var(--white)!important;}
+.update_title, .update_date {text-transform:uppercase;font-family: montserrat!important;font-size: 10px!important;letter-spacing: -.5px;}
+.update_title {font-style: italic; font-weight: 400!important;color:var(--main3)!important;margin-top:5px!important;} 
+.update_date {color:var(--white)!important;font-weight:800;}
+div#updates_popup_close svg {  stroke: var(--main)!important;}
+div#updates_popup .update_date {color:var(--main)!important;}
+div#updates_popup_wrap {font-family:arial;font-size:11px;line-height:110%;font-weight:500;}
+div#updates_popup::before {background:var(--rgb5)!important;}
+.ht4 {font-family:work sans!important;}
+.htp1, .htp2 {transition: all .8s!important;}
+.htp1 {color:var(--white);} .htp2 {color:var(--main);font-weight:800;font-size:85px;}
+.htp1:hover {color:var(--main3);} .htp2:hover {color:var(--main2);} 
 
 
 
