@@ -30,6 +30,7 @@ font-size:11px;text-align:justify;line-height:112%;overflow:auto;}
 .seoul *{-webkit-box-sizing: border-box; box-sizing: border-box;}
 .vt {border: 4px solid var(--rgb6);text-transform:uppercase;font-weight:800;
 float:left;position:relative;width:10px;height:10px;border-radius:2px;font-size:10px;text-align:center;margin-right:5px;}
+
 .partc {width: auto; border: 2px solid var(--rgbm); margin:8px 0px; }
 .part { width: 195px;  position: relative; font-size: 8px; padding: 4px 6px!important;text-transform:uppercase;}
 .blocdr {position:relative;float:none;padding:8px;text-align:justify;line-height:112%;font-size:11px;overflow:auto;height:220px;}
